@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane prefHeight="745.0" prefWidth="870.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prodotti.graficaController">
+   <top>
+      <AnchorPane prefHeight="325.0" prefWidth="870.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox layoutY="-1.0" prefHeight="54.0" prefWidth="870.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#AggiungiProdotto" prefWidth="138.0" text="Aggiungi" textAlignment="RIGHT">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../immagini/add_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#CancellaProdotto" prefWidth="138.0" text="Elimina">
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../immagini/delete%20(1).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#CercaProdotto" prefWidth="138.0" text="Cerca">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../immagini/find.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#AggiornaQta" prefWidth="145.0" text=" Aggiorna qtà" wrapText="true">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../immagini/update.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <ScrollPane layoutX="2.0" layoutY="58.0" prefHeight="267.0" prefWidth="870.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="53.0">
+              <content>
+                <AnchorPane fx:id="pannello" minHeight="0.0" minWidth="0.0" prefHeight="318.0" prefWidth="913.0" />
+              </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tabellaProdotti" prefHeight="420.0" prefWidth="870.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="tabId" prefWidth="124.0" text="Id" />
+                <TableColumn fx:id="tabNome" prefWidth="98.0" text="nome" />
+                  <TableColumn fx:id="tabMarca" minWidth="0.0" prefWidth="160.0" text="marca" />
+                  <TableColumn fx:id="tabPrezzo" prefWidth="101.0" text="prezzo" />
+                  <TableColumn fx:id="tabDataScadenza" prefWidth="155.0" text="dataScadenza" />
+                  <TableColumn fx:id="tabQta_utilizzata" minWidth="0.0" prefWidth="117.0" text="qta_utilizzata" />
+                  <TableColumn fx:id="tabQta_totale" prefWidth="114.0" text="qta_totale" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

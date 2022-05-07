@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="275.0" prefWidth="803.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prodotti.aggiornaQtaController">
+   <children>
+      <Text layoutX="159.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id prodotto" />
+      <TextField fx:id="id_prodotto" layoutX="285.0" layoutY="59.0" prefWidth="200.0" />
+      <Text layoutX="159.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="qta consumata" wrappingWidth="80.220703125" />
+      <TextField fx:id="quantita_consumata" layoutX="285.0" layoutY="112.0" prefWidth="200.0" />
+      <Button layoutX="534.0" layoutY="84.0" mnemonicParsing="false" onAction="#Aggiorna_quantita" prefHeight="30.0" prefWidth="100.0" text="Aggiorna" />
+   </children>
+</AnchorPane>

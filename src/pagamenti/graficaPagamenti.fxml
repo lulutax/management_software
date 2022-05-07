@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane prefHeight="745.0" prefWidth="870.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pagamenti.pagamentiController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tabellaPagamenti" prefHeight="420.0" prefWidth="870.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columns>
+                  <TableColumn fx:id="colonnaData" prefWidth="177.0" text="Data " />
+                  <TableColumn fx:id="colonnaDescrizione" prefWidth="249.0" text="Descrizione" />
+                  <TableColumn fx:id="colonnaImporto" minWidth="0.0" prefWidth="199.0" text="Importo" />
+                  <TableColumn fx:id="colonnaTipoPagamento" prefWidth="244.0" text="Tipo di pagamento" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="325.0" prefWidth="870.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox layoutY="-6.0" prefHeight="64.0" prefWidth="870.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#AggiungiPagamento" prefWidth="138.0" text="Aggiungi" textAlignment="RIGHT">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../immagini/add_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#CercaPagamento" prefWidth="138.0" text="Cerca">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../immagini/find.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#svuotaPagamenti" prefHeight="54.0" prefWidth="138.0" text="Svuota ">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../immagini/delete%20(1).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <ScrollPane layoutX="2.0" layoutY="58.0" prefHeight="267.0" prefWidth="870.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="53.0">
+               <content>
+                  <AnchorPane fx:id="pannello" minHeight="0.0" minWidth="0.0" prefHeight="258.0" prefWidth="913.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

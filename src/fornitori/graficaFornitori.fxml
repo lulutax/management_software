@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane prefHeight="745.0" prefWidth="870.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fornitori.fornitoriController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tabellaFornitori" prefHeight="420.0" prefWidth="870.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columns>
+                  <TableColumn fx:id="colonnaPiva" prefWidth="169.0" text="Partita iva" />
+                  <TableColumn fx:id="colonnaNome" prefWidth="118.0" text="nome" />
+                  <TableColumn fx:id="colonnaDescrizione" minWidth="0.0" prefWidth="183.0" text="descrizione" />
+                  <TableColumn fx:id="colonnaTelefono" prefWidth="120.0" text="telefono" />
+                  <TableColumn fx:id="colonnaEmail" prefWidth="92.0" text="e-mail" />
+                  <TableColumn fx:id="colonnaIndirizzo" minWidth="0.0" prefWidth="187.0" text="indirizzo" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="325.0" prefWidth="870.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox layoutY="-6.0" prefHeight="64.0" prefWidth="870.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#AggiungiFornitore" prefWidth="138.0" text="Aggiungi" textAlignment="RIGHT">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../immagini/add_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#EliminaFornitore" prefWidth="138.0" text="Elimina">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../immagini/delete%20(1).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#cercaFornitore" prefWidth="138.0" text="Cerca">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../immagini/find.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <ScrollPane layoutX="2.0" layoutY="58.0" prefHeight="267.0" prefWidth="870.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="53.0">
+               <content>
+                  <AnchorPane fx:id="pannelloFornitori" minHeight="0.0" minWidth="0.0" prefHeight="318.0" prefWidth="913.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

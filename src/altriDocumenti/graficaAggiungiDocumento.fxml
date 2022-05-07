@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="295.0" prefWidth="803.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="altriDocumenti.aggiungiController">
+   <children>
+      <Text layoutX="126.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome file" />
+      <TextField fx:id="nomeFile" layoutX="219.0" layoutY="69.0" prefHeight="25.0" prefWidth="200.0" />
+      <Button fx:id="b_aggiungi" layoutX="289.0" layoutY="185.0" mnemonicParsing="false" onAction="#aggiungi" prefHeight="40.0" prefWidth="50.0">
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../immagini/add_icon.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="b_allega" layoutX="450.0" layoutY="115.0" mnemonicParsing="false" onAction="#Allega" prefHeight="40.0" prefWidth="65.0">
+         <font>
+            <Font size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../immagini/att.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TextField fx:id="file" editable="false" layoutX="219.0" layoutY="122.0" prefHeight="25.0" prefWidth="200.0" />
+      <Text layoutX="149.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="File" wrappingWidth="30.43408203125" />
+   </children>
+</AnchorPane>

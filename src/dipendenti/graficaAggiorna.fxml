@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="275.0" prefWidth="803.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dipendenti.aggiornaDipendenteController">
+   <children>
+      <TextField fx:id="aggiorna" layoutX="280.0" layoutY="138.0" prefWidth="200.0" />
+      <MenuButton layoutX="543.0" layoutY="101.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="106.0" text="Aggiorna ">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#aggiornaStipendio" text="stipendio" />
+          <MenuItem mnemonicParsing="false" onAction="#aggiornaStato" text="stato" />
+            <MenuItem mnemonicParsing="false" onAction="#aggiornaMansione" text="mansione" />
+        </items>
+      </MenuButton>
+      <TextField fx:id="codiceFiscale" layoutX="280.0" layoutY="76.0" prefWidth="200.0" />
+      <Text layoutX="168.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codice fiscale" />
+      <Text layoutX="91.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="stipendio/ mansione / stato" />
+   </children>
+</AnchorPane>

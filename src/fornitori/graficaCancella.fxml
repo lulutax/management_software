@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="275.0" prefWidth="803.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fornitori.cancellaFornitoreController">
+   <children>
+      <TextField fx:id="piva" layoutX="190.0" layoutY="118.0" prefHeight="25.0" prefWidth="200.0" />
+      <Button layoutX="448.0" layoutY="115.0" mnemonicParsing="false" onAction="#Elimina" prefHeight="30.0" prefWidth="100.0" text="Elimina" />
+      <Text layoutX="80.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Partita iva" wrappingWidth="70.0" />
+   </children>
+</AnchorPane>

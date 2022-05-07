@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="240.0" prefWidth="803.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pagamenti.aggiungiPagamentoController">
+   <children>
+      <Text layoutX="402.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descrizione" wrappingWidth="86.0419921875" />
+      <Text layoutX="20.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo pagamento" wrappingWidth="113.87646484375" />
+      <TextField fx:id="descrizione" layoutX="489.0" layoutY="51.0" prefHeight="25.0" prefWidth="200.0" />
+      <TextField fx:id="tipoPagamento" layoutX="144.0" layoutY="105.0" prefHeight="25.0" prefWidth="200.0" />
+      <Text layoutX="407.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Importo" />
+      <TextField fx:id="importo" layoutX="489.0" layoutY="105.0" prefHeight="25.0" prefWidth="200.0" />
+      <Button layoutX="352.0" layoutY="161.0" mnemonicParsing="false" onAction="#Aggiungi" prefHeight="30.0" prefWidth="100.0" text="Aggiungi" />
+      <Text layoutX="20.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data " />
+      <DatePicker fx:id="dataPagamento" layoutX="144.0" layoutY="51.0" prefHeight="25.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

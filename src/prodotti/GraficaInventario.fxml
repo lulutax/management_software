@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="589.0" prefWidth="784.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prodotti.inventarioController">
+   <children>
+      <TableView fx:id="tabellaInventario" layoutY="53.0" prefHeight="572.0" prefWidth="784.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="53.0">
+        <columns>
+          <TableColumn fx:id="colonna_Id" prefWidth="223.0" text="Codice prodotto" />
+            <TableColumn fx:id="colonnaNomeProdotto" prefWidth="251.0" text="Nome prodotto" />
+          <TableColumn fx:id="colonnaQta" maxWidth="234.0" prefWidth="234.0" text="qta utilizzata" />
+        </columns>
+      </TableView>
+      <HBox layoutX="142.0" prefHeight="87.0" prefWidth="784.0" AnchorPane.bottomAnchor="565.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#svuotaInventario" prefHeight="54.0" prefWidth="138.0" text="Svuota ">
+               <font>
+                  <Font size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../immagini/delete%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appuntamenti.agendaController">
+   <center>
+      <TableView fx:id="tabella" prefHeight="300.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="colonnaData" prefWidth="75.0" text="data" />
+            <TableColumn fx:id="colonnaInizio" prefWidth="75.0" text="inizio" />
+            <TableColumn fx:id="colonnaFine" prefWidth="75.0" text="fine" />
+            <TableColumn fx:id="colonnaDesc" prefWidth="173.0" text="descrizione" />
+        </columns>
+      </TableView>
+   </center>
+   <left>
+      <AnchorPane prefHeight="417.0" prefWidth="254.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="descrizione" layoutX="18.0" layoutY="48.0" prefHeight="25.0" prefWidth="200.0" />
+            <DatePicker fx:id="data" layoutX="18.0" layoutY="106.0" prefHeight="25.0" prefWidth="200.0" />
+            <Text layoutX="18.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descrizione" wrappingWidth="79.13671875" />
+            <Text layoutX="18.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data" wrappingWidth="32.69140625" />
+            <Text layoutX="16.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ora Inizio" />
+            <Text layoutX="19.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ora Fine" />
+            <Text layoutX="80.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="80.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Button layoutX="17.0" layoutY="327.0" mnemonicParsing="false" onMouseClicked="#Aggiungi" prefHeight="30.0" prefWidth="100.0" text="Aggiungi" />
+            <ChoiceBox fx:id="ora_inizio" layoutX="18.0" layoutY="185.0" prefHeight="25.0" prefWidth="55.0" />
+            <ChoiceBox fx:id="min_inizio" layoutX="96.0" layoutY="185.0" prefHeight="25.0" prefWidth="55.0" />
+            <ChoiceBox fx:id="ora_fine" layoutX="18.0" layoutY="256.0" prefHeight="25.0" prefWidth="55.0" />
+            <ChoiceBox fx:id="min_fine" layoutX="96.0" layoutY="256.0" prefHeight="25.0" prefWidth="55.0" />
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

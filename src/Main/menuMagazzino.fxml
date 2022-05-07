@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pannello" prefHeight="675.0" prefWidth="710.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.menuMagazzinoController">
+   <children>
+      <Button fx:id="inventario" alignment="TOP_LEFT" layoutX="280.0" layoutY="272.0" mnemonicParsing="false" onMouseClicked="#premiInventario" prefHeight="55.0" prefWidth="150.0" text="Inventario">
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../immagini/inventario.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="prodotti" alignment="TOP_LEFT" layoutX="281.0" layoutY="201.0" mnemonicParsing="false" onMouseClicked="#premiProdotto" prefHeight="55.0" prefWidth="150.0" text="Prodotti">
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../immagini/produttori.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <Text fx:id="titolo" fill="#ff4949" layoutX="261.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MAGAZZINO" textAlignment="CENTER" wrappingWidth="191.0">
+         <font>
+            <Font name="MV Boli" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="275.0" prefWidth="803.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dipendenti.cercaDipendenteController">
+   <children>
+      <TextField fx:id="cerca" layoutX="278.0" layoutY="132.0" prefWidth="200.0" />
+      <ImageView fx:id="bottone_cerca" fitHeight="51.0" fitWidth="67.0" layoutX="534.0" layoutY="119.0" onMouseClicked="#trova" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../immagini/find.png" />
+         </image>
+      </ImageView>
+      <ChoiceBox fx:id="seleziona" layoutX="90.0" layoutY="132.0" prefWidth="150.0" />
+      <Text layoutX="90.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleziona" />
+   </children>
+</AnchorPane>

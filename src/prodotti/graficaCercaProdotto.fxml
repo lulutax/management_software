@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="275.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prodotti.cercaController">
+   <children>
+      <ChoiceBox fx:id="seleziona" layoutX="80.0" layoutY="122.0" prefWidth="150.0" />
+      <ImageView fx:id="bottone_cerca" fitHeight="51.0" fitWidth="67.0" layoutX="524.0" layoutY="109.0" onMouseClicked="#trova" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../immagini/find.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="cerca" layoutX="268.0" layoutY="122.0" prefWidth="200.0" />
+      <Text layoutX="80.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleziona" />
+   </children>
+</AnchorPane>
